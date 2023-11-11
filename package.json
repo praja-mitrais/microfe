@@ -17,7 +17,6 @@
     "dev:employee": "yarn --cwd \"./hrm-employee\" dev",
     "dev:host": "yarn --cwd \"./hrm-host\" dev",
     "serve:dev": "yarn build:employee && yarn preview:employee & yarn dev:host",
-    "serve:preview": "yarn build:employee && yarn preview:employee & yarn preview:host",
     "stop": "kill-port --port 3000,3001"
   },
   "devDependencies": {
