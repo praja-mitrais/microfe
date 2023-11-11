@@ -3,20 +3,16 @@
   "private": true,
   "version": "1.0.0",
   "workspaces": [
-    "./hrm-host",
     "./hrm-employee"
   ],
   "scripts": {
     "install:all": "yarn install --workspaces",
-    "build:all": "yarn run build --workspaces",
-    "preview:all": "yarn run preview --workspaces",
-    "build:employee": "yarn --cwd \"./hrm-employee\" build",
-    "build:host": "yarn --cwd \"./hrm-host\" build",
-    "preview:employee": "yarn --cwd \"./hrm-employee\" preview",
-    "preview:host": "yarn --cwd \"./hrm-host\" preview",
-    "dev:employee": "yarn --cwd \"./hrm-employee\" dev",
+    "build:all": "npm run build --workspaces",
+    "preview:all": "npm run preview --workspaces",
+    "install:host": "yarn --cwd \"./hrm-host\" install",
     "dev:host": "yarn --cwd \"./hrm-host\" dev",
-    "serve:dev": "yarn build:employee && yarn preview:employee & yarn dev:host",
+    "preserve": "yarn install:all && yarn build:all",
+    "serve": "yarn preview:all & yarn dev:host",
     "stop": "kill-port --port 3000,3001"
   },
   "devDependencies": {
