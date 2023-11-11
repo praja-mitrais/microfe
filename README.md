@@ -14,4 +14,5 @@ Since this is a micro front end you can run the apps separately but if you want 
 - Run the `hrm-host` using `yarn dev:host`
 
 I also make script `yarn serve:dev` to running all command above.
-**Make sure you open the host apps that running in PORT 3000**
+
+#### NOTE: Make sure you open the host apps that running in PORT 3000
